@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-center">
-        <h1 className="logo">sports bar</h1>
+        <h1 className="logo">restaurant</h1>
       </div>
       <button className="toggle-btn" onClick={openSidebar}>
         <FaBars />

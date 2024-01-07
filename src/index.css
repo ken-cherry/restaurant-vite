@@ -44,7 +44,7 @@ html {
   --grey-3: #e6ebf6;
 
   /* rest of vars */
-  --background-color: var(--primary-clr-blue);
+  /* --background-color: var(--primary-clr-blue); */
   --textColor-white: var(--primary-clr-white);
   --textColor-blue: var(--primary-clr-blue);
   --borderRadius: 0.25rem;
@@ -115,6 +115,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-clr-white);
+  color: var(--primary-clr-black);
 }
 .nav-center {
   width: var(--fluid-width);
@@ -124,26 +125,38 @@ nav {
   align-items: center;
 }
 .logo {
-  margin-top: 0;
-  margin-left: 0;
-  color: var(--textColor-blue);
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   font-weight: 700;
 }
 .toggle-btn {
   font-size: 1.5rem;
-  /* width: 2rem;
-  height: 2rem; */
   background: transparent;
   border: none;
-  /* border-color: var(--primary-clr-blue); */
-  /* border-radius: var(--borderRadius); */
-  /* border-color: transparent; */
-  color: var(--primary-clr-blue);
+  color: var(--primary-clr-black);
   transition: var(--transition);
   cursor: pointer;
 }
 .toggle-btn:hover {
   transform: scale(1.25);
+}
+/* 
+====================
+HERO
+====================
+*/
+.hero-container {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/hero-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-center {
+  /* height: calc(100vh - 3rem);
+  width: 80vw; */
+  /* background-color: var(--grey-1); */
 }
