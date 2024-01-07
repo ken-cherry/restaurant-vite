@@ -6,11 +6,32 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  /* background-color: var(--primary-clr-blue); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* colors */
+  --primary-clr-blue: #0033a0;
+  --primary-clr-white: #ffffff;
+  --primary-clr-black: #000000;
+  --clr-blue-1: #1947aa;
+  --clr-blue-2: #002e90;
+  --clr-blue-3: #002980;
+  --clr-blue-4: #002470;
+  --light-blue-1: #335cb3;
+  --light-blue-2: #4d70bd;
+  --light-blue-3: #6685c6;
+  --light-blue-4: #8099d0;
+  --dark-blue-1: #001f60;
+  --dark-blue-2: #001a50;
+  --dark-blue-3: #001440;
+  --dark-blue-4: #000f30;
+  --grey-1: #b3c2e3;
+  --grey-2: #ccd6ec;
+  --grey-3: #e6ebf6;
 }
 
 a {
@@ -24,16 +45,16 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
 button {
   border-radius: 8px;
@@ -65,4 +86,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.logo {
+  margin-top: 0;
+  margin-left: 0;
 }
