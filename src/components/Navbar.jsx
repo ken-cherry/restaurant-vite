@@ -1,18 +1,17 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
-import { useGlobalContext } from "../context";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const { openSidebar } = useGlobalContext();
   return (
     <nav>
       <div className="nav-center">
-        <h1 className="logo">restaurant</h1>
+        <span className="logo">restaurant</span>
+        <div className="nav-links">
+          <NavLink to="/" className="nav-link">
+            Home
+          </NavLink>
+        </div>
       </div>
-      <button className="toggle-btn" onClick={openSidebar}>
-        <FaBars />
-      </button>
-      {/* nav links later */}
     </nav>
   );
 };

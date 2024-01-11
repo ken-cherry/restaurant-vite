@@ -24,29 +24,21 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   /* colors */
-  --primary-clr-blue: #0033a0;
-  --primary-clr-white: #ffffff;
-  --primary-clr-black: #000000;
-  --clr-blue-1: #1947aa;
-  --clr-blue-2: #002e90;
-  --clr-blue-3: #002980;
-  --clr-blue-4: #002470;
-  --light-blue-1: #335cb3;
-  --light-blue-2: #4d70bd;
-  --light-blue-3: #6685c6;
-  --light-blue-4: #8099d0;
-  --dark-blue-1: #001f60;
-  --dark-blue-2: #001a50;
-  --dark-blue-3: #001440;
-  --dark-blue-4: #000f30;
-  --grey-1: #b3c2e3;
-  --grey-2: #ccd6ec;
-  --grey-3: #e6ebf6;
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
 
   /* rest of vars */
-  /* --background-color: var(--primary-clr-blue); */
-  --textColor-white: var(--primary-clr-white);
-  --textColor-blue: var(--primary-clr-blue);
+  --textColor-white: var(--slate-50);
+  --textColor-black: var(--slate-950);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -102,44 +94,45 @@ PROJECT CSS
 */
 body {
   margin: 0;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 /* 
 ====================
 PROJECT CSS
 ====================
 */
-nav {
+/* nav {
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary-clr-white);
   color: var(--primary-clr-black);
-}
-.nav-center {
+} */
+/* .nav-center {
   width: var(--fluid-width);
   max-width: var(--max-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .logo {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   font-weight: 700;
+  color: var(--slate-950);
 }
-.toggle-btn {
+/* .toggle-btn {
   font-size: 1.5rem;
   background: transparent;
   border: none;
   color: var(--primary-clr-black);
   transition: var(--transition);
   cursor: pointer;
-}
-.toggle-btn:hover {
+} */
+/* .toggle-btn:hover {
   transform: scale(1.25);
-}
+} */
 /* 
 ====================
 HERO
@@ -156,6 +149,7 @@ HERO
   background-position: center;
 }
 .hero-center {
+  color: var(--slate-100);
   /* height: calc(100vh - 3rem);
   width: 80vw; */
   /* background-color: var(--grey-1); */

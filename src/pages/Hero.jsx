@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="hero-center">
-        <h1>welcome</h1>
+        <h1>home page</h1>
       </div>
     </div>
   );
