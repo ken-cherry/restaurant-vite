@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
