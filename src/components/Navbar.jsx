@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Navbar = () => {
   return (
@@ -9,6 +10,12 @@ const Navbar = () => {
         <div className="nav-links">
           <NavLink to="/" className="nav-link">
             Home
+          </NavLink>
+          <NavLink to="/menu" className="nav-link">
+            Menu
+          </NavLink>
+          <NavLink to="/newsletter" className="nav-link">
+            Newsletter
           </NavLink>
         </div>
       </div>
