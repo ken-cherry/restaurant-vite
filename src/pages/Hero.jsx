@@ -1,13 +1,26 @@
 import React from "react";
+import styled from "styled-components";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
-      <div className="hero-center">
-        <h1>home page</h1>
+    <Wrapper>
+      <div className="hero-container">
+        <div className="hero-center">
+          <h1>home page</h1>
+        </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
+const Wrapper = styled.section`
+  .hero-container {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+`;
 export default Hero;

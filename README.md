@@ -6,7 +6,18 @@
 - React Router DOM Libraries
 - Styled Components
 
-### Launch project in your preferred IDE
+# Purpose of building this application.
+
+- Add project to my developer portfolio.
+- Try out Styled Components.
+- Practice my React Router DOM skills.
+- Practice error handling skills.
+
+# Thoughts after building this application.
+
+- Won't use Styled Components on any other personal project.
+
+# Launch project in your preferred IDE
 
 ```sh
 npm install
