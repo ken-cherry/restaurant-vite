@@ -24,10 +24,10 @@ const router = createBrowserRouter([
         //   }
         // ]
       },
-      {
-        path: "newsletter",
-        element: <Newsletter />,
-      },
+      // {
+      //   path: "newsletter",
+      //   element: <Newsletter />,
+      // },
     ],
   },
 ]);

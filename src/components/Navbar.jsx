@@ -14,9 +14,9 @@ const Navbar = () => {
           <NavLink to="/menu" className="nav-link">
             menu
           </NavLink>
-          <NavLink to="/newsletter" className="nav-link">
+          {/* <NavLink to="/newsletter" className="nav-link">
             newsletter
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </Wrapper>
@@ -31,7 +31,7 @@ const Wrapper = styled.nav`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem 2rem;
+    /* padding: 0.5rem 2rem; */
   }
   .logo {
     font-size: clamp(1.5rem, 3vw, 3rem);

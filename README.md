@@ -15,8 +15,6 @@
 
 # Thoughts after building this application.
 
-- Won't use Styled Components on any other personal project.
-
 # Launch project in your preferred IDE
 
 ```sh
