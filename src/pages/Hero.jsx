@@ -25,7 +25,6 @@ const Wrapper = styled.section`
   }
   .hero-center {
     color: var(--slate-100);
-    font-family: serif;
     font-style: italic;
   }
 `;

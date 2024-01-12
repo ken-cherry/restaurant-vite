@@ -8,7 +8,10 @@ const Footer = () => {
         <div className="contact-info">
           <div className="phone-number">1-123-456-7890</div>
           <div className="address">1234 Eat Here Rd</div>
-          <div className="hours">Hours: 4pm-11pm Daily</div>
+          <div className="hours">Hours: 4pm-11pm Tues - Sun</div>
+        </div>
+        <div className="footer-bottom">
+          <p>Cherry Web Development. All Rights Reserved.</p>
         </div>
       </div>
     </Wrapper>
@@ -32,11 +35,17 @@ const Wrapper = styled.section`
     gap: 0.5rem;
     margin-top: 1rem;
   }
+  .footer-bottom {
+    margin: 0.5rem auto;
+  }
   @media (min-width: 768px) {
     .contact-info {
       flex-direction: row;
       justify-content: space-between;
-      margin: 1rem 7rem;
+      /* margin: 1rem 7rem; */
+      margin: 1rem auto;
+      max-width: 700px;
+      gap: 2rem;
     }
   }
 `;
