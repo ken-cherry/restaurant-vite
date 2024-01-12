@@ -1,5 +1,4 @@
 import React from "react";
-// import Wrapper from "../assets/wrappers/ErrorPage";
 import styled from "styled-components";
 import { Link, useRouteError } from "react-router-dom";
 import img from "../assets/not-found.svg";

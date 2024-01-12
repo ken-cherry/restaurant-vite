@@ -22,5 +22,8 @@ const Wrapper = styled.section`
     background-size: cover;
     background-position: center;
   }
+  .hero-center {
+    color: var(--slate-100);
+  }
 `;
 export default Hero;
