@@ -49,7 +49,7 @@ export const tasting = [
   },
 ];
 
-export const appetizer = [
+export const threeCourse = [
   {
     id: 1,
     title: "Golden Osetra Caviar",
@@ -104,80 +104,74 @@ export const appetizer = [
     desc: "crepe, peach jam, cardamom",
     category: "appetizers",
   },
-];
-
-export const entrees = [
   {
-    id: 1,
+    id: 10,
     title: "Sea Scallops",
     desc: "potato gratin, green peas puree",
     category: "entree",
   },
   {
-    id: 2,
+    id: 11,
     title: "Duck Breast",
     desc: "carrot puree, roasted brussel sprouts, duck jus",
     category: "entree",
   },
   {
-    id: 3,
+    id: 12,
     title: "Atlantic Halibut",
     desc: "braised leeks, fava beans, beurre blanc",
     category: "entree",
   },
   {
-    id: 4,
+    id: 13,
     title: "Branzino",
     desc: "baby zucchini, couscous, capers, brown butter",
     category: "entree",
   },
   {
-    id: 5,
+    id: 14,
     title: "Herb Crusted Rack of Lamb",
     desc: "creamy polenta, artichokes, aromatic herbs infused sauce",
     category: "entree",
   },
   {
-    id: 6,
+    id: 15,
     title: "Beef Wellington",
     desc: "muchroom duxelles, truffle tapenade, rainbow baby carrots",
     category: "entree",
   },
   {
-    id: 7,
+    id: 16,
     title: "Potato Gnocchi",
     desc: "sauteed mushrooms, spinach, truffle butter",
     category: "entree",
   },
-];
-
-export const deserts = [
   {
-    id: 1,
+    id: 17,
     title: "Raspberry Pavlova",
     desc: "vanilla meringue, chocolate namelaka, raspberry sorbet (gf)",
     category: "desert",
   },
   {
-    id: 2,
+    id: 18,
     title: "Lovely Popcorn",
     desc: "popcorn mousse, orange granita, caramelized popcorn crumble",
     category: "desert",
   },
   {
-    id: 3,
+    id: 19,
     title: "Pina Colada",
     desc: "coconut ganache, pineapple compote, hazelnut praline, pineapple sorbet",
     category: "desert",
   },
   {
-    id: 4,
+    id: 20,
     title: "Chocolate Souffle",
     desc: "vanilla ice cream",
     category: "desert",
   },
   {
-    id: 5,
+    id: 21,
     title: "Sorbets & Ice Cream",
     desc: "vanilla, chocolate, pistachio, mango, coconut, raspberry",
     category: "desert",

@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { tasting } from "../data";
+import { tasting, threeCourse } from "../data";
 import Tasting from "../components/Tasting";
+import ThreeCourse from "../components/ThreeCourse";
 
 const Menu = () => {
   const [tastingItems, setTastingItems] = useState(tasting);
-
+  const [threeCourseItems, setThreeCourseItems] = useState(threeCourse);
   return (
     <Wrapper>
       <div className="menu-center">
         <div className="menu-selection">
           <div className="tasting">Chef's Tasting</div>
-          <div className="three-course">Three Course Prix Fixe</div>
+          <div className="three-course">Three Course</div>
+        </div>
+        <div className="three-course-menu">
+          <ThreeCourse items={threeCourseItems} />
         </div>
         <div className="tasting-menu">
           {/* <Tasting items={tastingItems} /> */}
@@ -49,7 +53,7 @@ const Wrapper = styled.section`
     display: grid;
     place-items: center;
   }
-  .tasting-item {
+  .single-item {
     display: grid;
     place-items: center;
     font-family: serif;

@@ -1,7 +1,16 @@
 import React from "react";
+import ThreeCourseItems from "./ThreeCourseItems";
 
-const ThreeCourse = () => {
-  return <div>ThreeCourse</div>;
+const ThreeCourse = ({ items }) => {
+  return (
+    <div className="section-center">
+      {items.map((threeCourseItem) => {
+        return (
+          <ThreeCourseItems key={threeCourseItem.id} {...threeCourseItem} />
+        );
+      })}
+    </div>
+  );
 };
 
 export default ThreeCourse;

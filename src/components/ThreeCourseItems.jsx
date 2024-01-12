@@ -1,7 +1,12 @@
 import React from "react";
 
-const ThreeCourseItems = () => {
-  return <div>ThreeCourseItems</div>;
+const ThreeCourseItems = ({ title, desc, category }) => {
+  return (
+    <article className="single-item">
+      <h1>{title}</h1>
+      <p>{desc}</p>
+    </article>
+  );
 };
 
 export default ThreeCourseItems;
