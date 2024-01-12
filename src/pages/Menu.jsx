@@ -5,26 +5,34 @@ import { tasting, threeCourse } from "../data";
 import Tasting from "../components/Tasting";
 import ThreeCourse from "../components/ThreeCourse";
 
+const courseCategories = [...new Set(threeCourse.map((item) => item.category))];
+console.log(courseCategories);
+
 const Menu = () => {
   const [tastingItems, setTastingItems] = useState(tasting);
   const [threeCourseItems, setThreeCourseItems] = useState(threeCourse);
+
+  const toggleMenu = () => {
+    const [isMenu, setIsMenu] = useState(false);
+  };
+
   return (
     <Wrapper>
       <div className="menu-center">
         <div className="menu-selection">
-          <div className="tasting">Chef's Tasting</div>
-          <div className="three-course">Three Course</div>
+          <button className="tasting">Chef's Tasting</button>
+          <button className="three-course">Three Course</button>
         </div>
         <div className="three-course-menu">
           <ThreeCourse items={threeCourseItems} />
         </div>
         <div className="tasting-menu">
-          {/* <Tasting items={tastingItems} /> */}
+          <Tasting items={tastingItems} />
         </div>
-        {/* <div className="menu-cost">
+        <div className="menu-cost">
           <p>chef's tasting: $180 per person</p>
           <p>three course prix fixe: $100 per person</p>
-        </div> */}
+        </div>
       </div>
     </Wrapper>
   );

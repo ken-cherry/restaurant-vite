@@ -1,6 +1,6 @@
 import React from "react";
 
-const TastingItem = ({ title, desc, category }) => {
+const TastingItem = ({ title, desc }) => {
   return (
     <article className="single-item">
       <h1>{title}</h1>

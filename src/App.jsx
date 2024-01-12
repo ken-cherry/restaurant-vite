@@ -18,16 +18,7 @@ const router = createBrowserRouter([
       {
         path: "menu",
         element: <Menu />,
-        // children:[
-        //   {
-        //     work on later all appetizers sides entrees
-        //   }
-        // ]
       },
-      // {
-      //   path: "newsletter",
-      //   element: <Newsletter />,
-      // },
     ],
   },
 ]);
@@ -37,10 +28,6 @@ function App() {
     <>
       <main>
         <RouterProvider router={router} />
-        {/* <Navbar />
-        <Hero />
-        <Sidebar />
-        <Footer /> */}
       </main>
     </>
   );
