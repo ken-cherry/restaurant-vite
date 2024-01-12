@@ -54,7 +54,7 @@ const Wrapper = styled.nav`
     padding: 0.5rem 0.5rem 0.5rem 0;
     transition: var(--transition);
     letter-spacing: 2px;
-    text-decoration: none;
+    /* text-decoration: none; */
   }
   .nav-link:hover {
     color: var(--slate-950);
