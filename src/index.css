@@ -151,22 +151,3 @@ HERO
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/hero-background-2.jpg") !important;
 }
-
-.hero-center {
-  /* color: var(--slate-100); */
-  /* height: calc(100vh - 3rem);
-  width: 80vw; */
-  /* background-color: var(--grey-1); */
-}
-/* .page {
-  width: var(--view-width);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 5rem 2rem;
-} */
-/* .page {
-  width: var(--view-width);
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 5rem 2rem;
-} */

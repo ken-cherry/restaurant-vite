@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div>
+    <section>
       <h2>Menu</h2>
-    </div>
+    </section>
   );
 };
 

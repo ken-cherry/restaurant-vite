@@ -33,14 +33,10 @@ const Wrapper = styled.section`
     margin-top: 1rem;
   }
   @media (min-width: 768px) {
-    .footer-center {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
     .contact-info {
       flex-direction: row;
-      margin-top: 0;
+      justify-content: space-between;
+      margin: 1rem 7rem;
     }
   }
 `;

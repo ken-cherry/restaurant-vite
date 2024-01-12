@@ -6,7 +6,8 @@ const Hero = () => {
     <Wrapper>
       <div className="hero-container">
         <div className="hero-center">
-          <h1>home page</h1>
+          <h1>Simply Elegant</h1>
+          <h1>Tastefully Refreshing</h1>
         </div>
       </div>
     </Wrapper>
@@ -24,6 +25,8 @@ const Wrapper = styled.section`
   }
   .hero-center {
     color: var(--slate-100);
+    font-family: serif;
+    font-style: italic;
   }
 `;
 export default Hero;

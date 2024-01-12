@@ -39,6 +39,7 @@ const Wrapper = styled.nav`
     letter-spacing: var(--letterSpacing);
     font-weight: 700;
     color: var(--slate-700);
+    font-family: serif;
     font-style: italic;
   }
   .nav-links {
