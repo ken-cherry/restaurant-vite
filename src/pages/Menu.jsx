@@ -12,27 +12,23 @@ const Menu = () => {
   const [tastingItems, setTastingItems] = useState(tasting);
   const [threeCourseItems, setThreeCourseItems] = useState(threeCourse);
 
-  const toggleMenu = () => {
-    const [isMenu, setIsMenu] = useState(false);
-  };
-
   return (
     <Wrapper>
       <div className="menu-center">
         <div className="menu-selection">
-          <button className="tasting">Chef's Tasting</button>
-          <button className="three-course">Three Course</button>
+          <div className="tasting">Chef's Tasting</div>
+          <div className="three-course">Three Course</div>
         </div>
-        <div className="three-course-menu">
-          <ThreeCourse items={threeCourseItems} />
-        </div>
+
         <div className="tasting-menu">
+          <p>chef's tasting: $180 per person</p>
           <Tasting items={tastingItems} />
         </div>
-        <div className="menu-cost">
-          <p>chef's tasting: $180 per person</p>
+        <div className="three-course-menu">
           <p>three course prix fixe: $100 per person</p>
+          <ThreeCourse items={threeCourseItems} />
         </div>
+        <div className="menu-cost"></div>
       </div>
     </Wrapper>
   );
@@ -40,9 +36,14 @@ const Menu = () => {
 
 const Wrapper = styled.section`
   background: var(--slate-500);
-
+  .three-course-menu {
+    display: none;
+  }
+  .tasting-menu {
+    display: none;
+  }
   .menu-center {
-    /* height: 100vh; */
+    height: 100vh;
     /* text-transform: capitalize; */
     color: var(--slate-100);
     font-weight: 500;

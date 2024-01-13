@@ -5,6 +5,7 @@
 - Vite
 - React Router DOM Libraries
 - Styled Components
+- React Icons
 
 # Purpose of building this application.
 

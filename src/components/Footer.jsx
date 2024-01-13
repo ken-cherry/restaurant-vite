@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { FaMobileScreenButton } from "react-icons/fa6";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { FaDoorOpen } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <Wrapper>
       <div className="footer-center">
         <div className="contact-info">
-          <div className="phone-number">1-123-456-7890</div>
-          <div className="address">1234 Eat Here Rd</div>
-          <div className="hours">Hours: 4pm-11pm Tues - Sun</div>
+          <div className="phone-number">
+            <FaMobileScreenButton /> 123-456-7890
+          </div>
+          <div className="address">
+            <FaMapLocationDot /> 1234 Eat Here Rd
+          </div>
+          <div className="hours">
+            <FaDoorOpen /> 4pm-11pm Tues - Sun
+          </div>
         </div>
         <div className="footer-bottom">
           <p>Cherry Web Development. All Rights Reserved.</p>
