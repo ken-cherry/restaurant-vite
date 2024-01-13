@@ -3,16 +3,15 @@ import { createContext, useState, useContext } from "react";
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isChefsTasting, setIsChefsTasting] = useState(true);
 
-  const openSidebar = () => {
-    setIsSidebarOpen(true);
+  const toggleChefsTasting = () => {
+    const newChefsTasting = !isChefsTasting;
+    setIsChefsTasting(newChefsTasting);
   };
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+
   return (
-    <AppContext.Provider value={{ isSidebarOpen, openSidebar, closeSidebar }}>
+    <AppContext.Provider value={{ isChefsTasting, toggleChefsTasting }}>
       {children}
     </AppContext.Provider>
   );
