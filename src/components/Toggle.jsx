@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 
-import { useGlobalContext } from "../context";
 import Tasting from "../components/Tasting";
 import ThreeCourse from "../components/ThreeCourse";
 import { tasting, threeCourse } from "../data";
+import { useGlobalContext } from "../context";
+import styled from "styled-components";
 
 const Toggle = () => {
   const [tastingItems, setTastingItems] = useState(tasting);
@@ -12,13 +13,16 @@ const Toggle = () => {
   const { isChefsTasting, toggleChefsTasting } = useGlobalContext();
 
   return (
-    <section className="toggle-container">
-      <button
-        className="tasting"
-        onClick={() => toggleChefsTasting(!isChefsTasting)}
-      >
-        {isChefsTasting ? "Chefs Tasting" : "Three Courses"}
-      </button>
+    <section>
+      <div className="btn-container">
+        <button
+          className="tasting"
+          onClick={() => toggleChefsTasting(!isChefsTasting)}
+        >
+          {isChefsTasting ? "Tasting" : "Courses"}
+        </button>
+      </div>
+
       <div className="tasting-menu">
         {(isChefsTasting && <Tasting items={tastingItems} />) || (
           <ThreeCourse items={threeCourseItems} />

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import Tasting from "../components/Tasting";
-import ThreeCourse from "../components/ThreeCourse";
 import Toggle from "../components/Toggle";
 
 // const courseCategories = [...new Set(threeCourse.map((item) => item.category))];
@@ -24,7 +22,7 @@ const Menu = () => {
 const Wrapper = styled.section`
   background: var(--slate-500);
   .menu-center {
-    height: 100vh;
+    /* height: 100vh; */
     /* text-transform: capitalize; */
     color: var(--slate-100);
     font-weight: 500;
@@ -37,7 +35,11 @@ const Wrapper = styled.section`
     gap: 2rem;
     padding: 1rem;
   }
-
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .menu-cost {
     /* height: 50vh; */
     margin-top: 5rem;
