@@ -24,11 +24,9 @@ const Wrapper = styled.section`
   font-family: serif;
   font-style: italic;
   .menu-center {
-    /* height: 100vh; */
-    /* text-transform: capitalize; */
-    /* color: var(--slate-100); */
     font-weight: 500;
     font-size: 1.25rem;
+    padding: 2.5rem;
   }
   .menu-selection {
     display: flex;
