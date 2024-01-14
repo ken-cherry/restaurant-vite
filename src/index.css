@@ -63,27 +63,6 @@ html {
     color: var(--slate-900);
   }
 }
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
-
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
 
 button {
   border-radius: 8px;
@@ -111,7 +90,6 @@ PROJECT CSS
 */
 body {
   margin: 0;
-  /* background-color: var(--background-color); */
 }
 .underline {
   width: 5rem;
@@ -120,43 +98,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--slate-400);
-  /* box-shadow: 4px 4px 4px var(blue); */
 }
 /* 
 ====================
 PROJECT CSS
 ====================
 */
-/* nav {
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-clr-white);
-  color: var(--primary-clr-black);
-} */
-/* .nav-center {
-  width: var(--fluid-width);
-  max-width: var(--max-width);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 .logo {
   text-transform: capitalize;
 }
 
-/* .toggle-btn {
-  font-size: 1.5rem;
-  background: transparent;
-  border: none;
-  color: var(--primary-clr-black);
-  transition: var(--transition);
-  cursor: pointer;
-} */
-/* .toggle-btn:hover {
-  transform: scale(1.25);
-} */
 /* 
 ====================
 HERO

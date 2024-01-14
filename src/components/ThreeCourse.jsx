@@ -24,7 +24,7 @@ const ThreeCourse = ({ appetizer, entree, desert }) => {
         );
       })}
       <div className="menu-title">
-        <h2>Deserts</h2>
+        <h2>Desserts</h2>
         <div className="underline"></div>
       </div>
       {desert.map((threeCourseItem) => {

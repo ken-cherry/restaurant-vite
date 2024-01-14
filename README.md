@@ -14,8 +14,6 @@
 - Practice my React Router DOM skills.
 - Practice error handling skills.
 
-# Thoughts after building this application.
-
 # Launch project in your preferred IDE
 
 ```sh

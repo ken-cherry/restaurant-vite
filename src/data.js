@@ -1,9 +1,3 @@
-// const navLinks = [
-//   {
-//     id: 0,
-//     title: "home",
-//   },
-// ];
 export const tasting = [
   {
     id: 1,
@@ -140,7 +134,7 @@ export const entrees = [
   {
     id: 15,
     title: "Beef Wellington",
-    desc: "muchroom duxelles, truffle tapenade, rainbow baby carrots",
+    desc: "mushroom duxelles, truffle tapenade, rainbow baby carrots",
     category: "entree",
   },
   {

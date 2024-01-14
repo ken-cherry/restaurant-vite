@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Toggle from "../components/Toggle";
-
-// const courseCategories = [...new Set(threeCourse.map((item) => item.category))];
-// console.log(courseCategories);
 
 const Menu = () => {
   return (
