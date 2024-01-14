@@ -25,6 +25,7 @@ const Navbar = () => {
 
 const Wrapper = styled.nav`
   background: var(--slate-200);
+  padding-bottom: 1rem;
   .nav-center {
     text-transform: capitalize;
     width: var(--view-width);
@@ -62,6 +63,7 @@ const Wrapper = styled.nav`
     color: var(--slate-950);
   }
   @media (min-width: 768px) {
+    padding-bottom: 0;
     .nav-center {
       flex-direction: row;
       justify-content: space-between;

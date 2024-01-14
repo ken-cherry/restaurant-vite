@@ -42,12 +42,12 @@ const Wrapper = styled.section`
   }
   .menu-cost,
   .menu-title {
-    /* height: 50vh; */
     margin-top: 1rem;
     display: grid;
     place-items: center;
     font-weight: 900;
     color: var(--slate-50);
+    text-align: center;
   }
   .single-item {
     display: grid;
