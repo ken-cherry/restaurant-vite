@@ -18,7 +18,17 @@ const Menu = () => {
 const Wrapper = styled.section`
   background: var(--slate-600);
   font-family: serif;
-  font-style: italic;
+  /* font-style: italic; */
+  header {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: var(--slate-50);
+  }
+  header,
+  .menu-title,
+  .single-item h1 {
+    font-style: italic;
+  }
   .menu-center {
     font-weight: 500;
     font-size: 1.25rem;
@@ -31,19 +41,25 @@ const Wrapper = styled.section`
     gap: 2rem;
     padding: 1rem;
   }
-  .btn-container {
+  .btn-container,
+  header {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .menu-cost,
   .menu-title {
-    margin-top: 1rem;
     display: grid;
     place-items: center;
     font-weight: 900;
     color: var(--slate-50);
     text-align: center;
+  }
+  .menu-title {
+    margin-top: 2.5rem;
+  }
+  .menu-taste {
+    margin-bottom: 2.5rem;
   }
   .single-item {
     display: grid;
