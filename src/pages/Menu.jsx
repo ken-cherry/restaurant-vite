@@ -20,13 +20,13 @@ const Menu = () => {
 };
 
 const Wrapper = styled.section`
-  background: var(--slate-500);
+  background: var(--slate-600);
   font-family: serif;
   font-style: italic;
   .menu-center {
     /* height: 100vh; */
     /* text-transform: capitalize; */
-    color: var(--slate-100);
+    /* color: var(--slate-100); */
     font-weight: 500;
     font-size: 1.25rem;
   }
@@ -49,17 +49,19 @@ const Wrapper = styled.section`
     display: grid;
     place-items: center;
     font-weight: 900;
+    color: var(--slate-50);
   }
   .single-item {
     display: grid;
     place-items: center;
-    /* font-family: serif;
-    font-style: italic; */
     text-align: center;
     margin: 1rem auto;
   }
-  h1 {
-    text-decoration: underline;
+  .single-item h1 {
+    color: var(--slate-50);
+  }
+  .single-item p {
+    color: var(--slate-200);
   }
 `;
 

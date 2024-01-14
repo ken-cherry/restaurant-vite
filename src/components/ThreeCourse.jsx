@@ -6,6 +6,7 @@ const ThreeCourse = ({ appetizer, entree, desert }) => {
     <div className="section-center">
       <div className="menu-title">
         <h2>Appetizers</h2>
+        <div className="underline"></div>
       </div>
       {appetizer.map((threeCourseItem) => {
         return (
@@ -14,6 +15,7 @@ const ThreeCourse = ({ appetizer, entree, desert }) => {
       })}
       <div className="menu-title">
         <h2>Entrees</h2>
+        <div className="underline"></div>
       </div>
       {entree.map((threeCourseItem) => {
         return (
@@ -22,6 +24,7 @@ const ThreeCourse = ({ appetizer, entree, desert }) => {
       })}
       <div className="menu-title">
         <h2>Deserts</h2>
+        <div className="underline"></div>
       </div>
       {desert.map((threeCourseItem) => {
         return (

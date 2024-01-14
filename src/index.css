@@ -109,6 +109,15 @@ body {
   margin: 0;
   /* background-color: var(--background-color); */
 }
+.underline {
+  width: 5rem;
+  height: 0.15rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--slate-400);
+  /* box-shadow: 4px 4px 4px var(blue); */
+}
 /* 
 ====================
 PROJECT CSS
