@@ -5,7 +5,6 @@ import Tasting from "../components/Tasting";
 import ThreeCourse from "../components/ThreeCourse";
 import { tasting, appetizers, entrees, deserts } from "../data";
 import { useGlobalContext } from "../context";
-import styled from "styled-components";
 
 const Toggle = () => {
   const [tastingItems, setTastingItems] = useState(tasting);

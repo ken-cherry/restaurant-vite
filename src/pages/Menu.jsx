@@ -61,8 +61,6 @@ const Wrapper = styled.section`
   h1 {
     text-decoration: underline;
   }
-  @media (min-width: 768px) {
-  }
 `;
 
 export default Menu;

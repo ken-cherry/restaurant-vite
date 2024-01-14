@@ -35,9 +35,21 @@ const Wrapper = styled.section`
   .hero-icon {
     font-size: 4rem;
     padding-top: 0.7rem;
+    transition: var(--transition);
   }
   h1 {
     font-size: 2rem;
+    transition: var(--transition);
+  }
+  @media (min-width: 768px) {
+    .hero-icon {
+      font-size: 6rem;
+      transition: var(--transition);
+    }
+    h1 {
+      font-size: 4rem;
+      transition: var(--transition);
+    }
   }
 `;
 export default Hero;
