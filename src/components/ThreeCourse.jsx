@@ -4,7 +4,7 @@ import ThreeCourseItems from "./ThreeCourseItems";
 const ThreeCourse = ({ appetizer, entree, desert }) => {
   return (
     <div className="section-center">
-      <header>Three Course Prix Fixe</header>
+      <header>3 Course Prix Fixe</header>
       <div className="menu-cost"> $100 per person</div>
       <div className="menu-title">
         <h2>Appetizers</h2>
