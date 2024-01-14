@@ -3,13 +3,15 @@ import { useState } from "react";
 
 import Tasting from "../components/Tasting";
 import ThreeCourse from "../components/ThreeCourse";
-import { tasting, threeCourse } from "../data";
+import { tasting, appetizers, entrees, deserts } from "../data";
 import { useGlobalContext } from "../context";
 import styled from "styled-components";
 
 const Toggle = () => {
   const [tastingItems, setTastingItems] = useState(tasting);
-  const [threeCourseItems, setThreeCourseItems] = useState(threeCourse);
+  const [appetizerItems, setAppetizerItems] = useState(appetizers);
+  const [entreeItems, setEntreeItems] = useState(entrees);
+  const [desertItems, setDesertItems] = useState(deserts);
   const { isChefsTasting, toggleChefsTasting } = useGlobalContext();
 
   return (
@@ -19,13 +21,16 @@ const Toggle = () => {
           className="tasting"
           onClick={() => toggleChefsTasting(!isChefsTasting)}
         >
-          {isChefsTasting ? "Tasting" : "Courses"}
+          {isChefsTasting ? "Chefs Tasting" : "Three Course Prix Fixe"}
         </button>
       </div>
-
       <div className="tasting-menu">
         {(isChefsTasting && <Tasting items={tastingItems} />) || (
-          <ThreeCourse items={threeCourseItems} />
+          <ThreeCourse
+            appetizer={appetizerItems}
+            entree={entreeItems}
+            desert={desertItems}
+          />
         )}
         {/* <p>chef's tasting: $180 per person</p> */}
       </div>

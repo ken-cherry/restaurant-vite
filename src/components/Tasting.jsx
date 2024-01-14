@@ -7,6 +7,7 @@ const Tasting = ({ items }) => {
       {items.map((tastingItem) => {
         return <TastingItem key={tastingItem.id} {...tastingItem} />;
       })}
+      <div className="menu-cost">Chef's Tasting: $180 per person</div>
     </div>
   );
 };

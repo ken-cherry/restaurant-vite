@@ -21,6 +21,8 @@ const Menu = () => {
 
 const Wrapper = styled.section`
   background: var(--slate-500);
+  font-family: serif;
+  font-style: italic;
   .menu-center {
     /* height: 100vh; */
     /* text-transform: capitalize; */
@@ -40,17 +42,19 @@ const Wrapper = styled.section`
     flex-direction: row;
     justify-content: center;
   }
-  .menu-cost {
+  .menu-cost,
+  .menu-title {
     /* height: 50vh; */
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: grid;
     place-items: center;
+    font-weight: 900;
   }
   .single-item {
     display: grid;
     place-items: center;
-    font-family: serif;
-    font-style: italic;
+    /* font-family: serif;
+    font-style: italic; */
     text-align: center;
     margin: 1rem auto;
   }

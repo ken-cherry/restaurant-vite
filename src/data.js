@@ -49,7 +49,7 @@ export const tasting = [
   },
 ];
 
-export const threeCourse = [
+export const appetizers = [
   {
     id: 1,
     title: "Golden Osetra Caviar",
@@ -104,6 +104,9 @@ export const threeCourse = [
     desc: "crepe, peach jam, cardamom",
     category: "appetizers",
   },
+];
+
+export const entrees = [
   {
     id: 10,
     title: "Sea Scallops",
@@ -146,6 +149,9 @@ export const threeCourse = [
     desc: "sauteed mushrooms, spinach, truffle butter",
     category: "entree",
   },
+];
+
+export const deserts = [
   {
     id: 17,
     title: "Raspberry Pavlova",
