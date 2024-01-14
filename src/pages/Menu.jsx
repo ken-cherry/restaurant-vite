@@ -32,7 +32,7 @@ const Wrapper = styled.section`
   .menu-center {
     font-weight: 500;
     font-size: 1.25rem;
-    padding: 2.5rem;
+    padding: 2rem;
   }
   .menu-selection {
     display: flex;
