@@ -73,10 +73,12 @@ button {
   font-family: inherit;
   background-color: var(--slate-300);
   cursor: pointer;
-  transition: border-color 0.25s;
+  /* transition: border-color 0.25s; */
 }
 button:hover {
-  border-color: #646cff;
+  /* border-color: #646cff; */
+  background-color: var(--slate-700);
+  color: var(--slate-50);
 }
 button:focus,
 button:focus-visible {

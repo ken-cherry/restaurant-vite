@@ -20,7 +20,9 @@ const Toggle = () => {
           className="tasting"
           onClick={() => toggleChefsTasting(!isChefsTasting)}
         >
-          {isChefsTasting ? "Chefs Tasting" : "Three Course Prix Fixe"}
+          {isChefsTasting
+            ? "Click for 3 Course Menu"
+            : "Click for Tasting Menu"}
         </button>
       </div>
       <div className="tasting-menu">
