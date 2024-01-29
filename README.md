@@ -25,6 +25,3 @@ npm install
 ```sh
 npm run dev
 ```
-
-{/_ <button className="tasting">Chef's Tasting</button> _/}
-{/_ <button className="three-course">Three Course</button> _/}

@@ -18,7 +18,6 @@ const Menu = () => {
 const Wrapper = styled.section`
   background: var(--slate-600);
   font-family: serif;
-  /* font-style: italic; */
   header {
     font-size: 2rem;
     padding-top: 1rem;
