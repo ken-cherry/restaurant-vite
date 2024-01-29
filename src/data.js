@@ -177,3 +177,26 @@ export const deserts = [
     category: "desert",
   },
 ];
+
+export const heroImages = [
+  {
+    id: 1,
+    image: "../src/images/bar.jpg",
+    title: "bar",
+  },
+  {
+    id: 2,
+    image: "../src/images/cheers1.jpg",
+    title: "cheers",
+  },
+  {
+    id: 3,
+    image: "../src/images/eating1.jpg",
+    title: "food",
+  },
+  {
+    id: 4,
+    image: "../src/images/tables1.jpg",
+    title: "tables",
+  },
+];

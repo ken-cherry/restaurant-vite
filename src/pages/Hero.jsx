@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { LuAmpersand } from "react-icons/lu";
 
+import { heroImages } from "../data";
+
 const Hero = () => {
   return (
     <Wrapper>
@@ -12,6 +14,18 @@ const Hero = () => {
             <LuAmpersand />
           </div>
           <h1>Tastefully Refreshing</h1>
+        </div>
+      </div>
+      <div className="images-container">
+        <div className="images-center">
+          {heroImages.map((item) => {
+            const { id, image, title } = item;
+            return (
+              <article className="single-image" key={id}>
+                <img src={image} alt={title} />
+              </article>
+            );
+          })}
         </div>
       </div>
     </Wrapper>
@@ -41,6 +55,7 @@ const Wrapper = styled.section`
     font-size: 2rem;
     transition: var(--transition);
   }
+
   @media (min-width: 768px) {
     .hero-icon {
       font-size: 6rem;
