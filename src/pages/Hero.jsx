@@ -59,13 +59,14 @@ const Wrapper = styled.section`
     transition: var(--transition);
   }
   .images-container {
-    background: var(--slate-200);
+    background: var(--slate-600);
+    /* background: var(--slate-200); */
     padding: 1rem;
     display: grid;
     place-content: center;
   }
   .images-center {
-    width: 90vw;
+    /* width: 90vw; */
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -98,8 +99,8 @@ const Wrapper = styled.section`
   @media screen and (min-width: 1170px) {
     .images-center {
       transition: var(--transition);
-      grid-template-rows: 200px 200px;
-      gap: 0.5rem;
+      grid-template-rows: 300px 300px;
+      gap: 2rem;
       grid-template-areas:
         "a b d"
         "a c d";
