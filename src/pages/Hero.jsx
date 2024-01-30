@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { LuAmpersand } from "react-icons/lu";
 
 import { heroImages } from "../data";
+//
 
 const Hero = () => {
   return (
