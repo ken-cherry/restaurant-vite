@@ -99,9 +99,9 @@ const Wrapper = styled.section`
     .images-center {
       transition: var(--transition);
       grid-template-rows: 200px 200px;
-      gap: 1rem;
+      gap: 0.5rem;
       grid-template-areas:
-        "a b b "
+        "a b d"
         "a c d";
     }
     .single-image {
