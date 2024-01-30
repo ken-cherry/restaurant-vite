@@ -119,9 +119,9 @@ HERO
 
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/assets/images/hero-background-2.jpg") !important;
+    url("../images/hero-background-2.jpg") !important;
 }
 .bar-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/assets/images/barLg.jpg");
+    url("../images/barLg.jpg");
 }
