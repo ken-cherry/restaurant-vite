@@ -80,6 +80,8 @@ const Wrapper = styled.section`
   }
   .bar-container {
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media screen and (min-width: 768px) {
