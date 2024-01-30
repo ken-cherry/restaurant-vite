@@ -121,3 +121,7 @@ HERO
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/hero-background-2.jpg") !important;
 }
+.bar-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/barLg.jpg");
+}

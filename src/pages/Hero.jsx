@@ -19,14 +19,17 @@ const Hero = () => {
       <div className="images-container">
         <div className="images-center">
           {heroImages.map((item) => {
-            const { id, image, title } = item;
+            const { id, image, title, name } = item;
             return (
-              <article className="single-image" key={id}>
-                <img src={image} alt={title} />
+              <article className={name} key={id}>
+                <img src={image} alt={title} className="hero-image" />
               </article>
             );
           })}
         </div>
+      </div>
+      <div className="bar-container">
+        <div className="bar-center">bar</div>
       </div>
     </Wrapper>
   );
@@ -55,8 +58,30 @@ const Wrapper = styled.section`
     font-size: 2rem;
     transition: var(--transition);
   }
+  .images-container {
+    background: var(--slate-200);
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+  }
+  .images-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    transition: var(--transition);
+  }
+  .hero-image {
+    height: 15rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+  }
+  .bar-container {
+    height: 100vh;
+  }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .hero-icon {
       font-size: 6rem;
       transition: var(--transition);
@@ -64,6 +89,37 @@ const Wrapper = styled.section`
     h1 {
       font-size: 4rem;
       transition: var(--transition);
+    }
+    .images-center {
+      grid-template-columns: 1fr 1fr;
+      transition: var(--transition);
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .images-center {
+      grid-template-rows: 200px 200px;
+      gap: 1rem;
+      grid-template-areas:
+        "a b b"
+        "a c d";
+    }
+    .single-image {
+      height: 100%;
+    }
+    .hero-image {
+      height: 100%;
+    }
+    .image-1 {
+      grid-area: b;
+    }
+    .image-2 {
+      grid-area: a;
+    }
+    .image-3 {
+      grid-area: c;
+    }
+    .image-4 {
+      grid-area: d;
     }
   }
 `;
