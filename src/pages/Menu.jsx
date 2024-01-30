@@ -60,6 +60,16 @@ const Wrapper = styled.section`
   .menu-taste {
     margin-bottom: 2.5rem;
   }
+  .menu-tasting {
+    background-color: var(--slate-950);
+    border-radius: var(--borderRadius);
+    padding: 1rem;
+  }
+  .menu-courses {
+    background-color: var(--slate-950);
+    border-radius: var(--borderRadius);
+    padding: 0 1rem;
+  }
   .single-item {
     display: grid;
     place-items: center;

@@ -6,9 +6,11 @@ const Tasting = ({ items }) => {
     <div className="section-center">
       <header>Chef's Tasting</header>
       <div className="menu-cost menu-taste"> $180 per person</div>
-      {items.map((tastingItem) => {
-        return <TastingItem key={tastingItem.id} {...tastingItem} />;
-      })}
+      <div className="menu-tasting">
+        {items.map((tastingItem) => {
+          return <TastingItem key={tastingItem.id} {...tastingItem} />;
+        })}
+      </div>
     </div>
   );
 };

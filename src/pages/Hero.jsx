@@ -97,10 +97,11 @@ const Wrapper = styled.section`
   }
   @media screen and (min-width: 1170px) {
     .images-center {
+      transition: var(--transition);
       grid-template-rows: 200px 200px;
       gap: 1rem;
       grid-template-areas:
-        "a b b"
+        "a b b "
         "a c d";
     }
     .single-image {
