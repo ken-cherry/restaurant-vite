@@ -179,11 +179,6 @@ export const deserts = [
 ];
 
 export const heroImages = [
-  // {
-  //   id: 1,
-  //   image: "../src/images/bar.jpg",
-  //   title: "bar",
-  // },
   {
     id: 2,
     image: "../src/images/cheers1.jpg",
