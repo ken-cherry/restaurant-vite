@@ -48,7 +48,7 @@ const Hero = () => {
           {heroImages.map((item) => {
             const { id, image, title, name } = item;
             return (
-              <article className={name} key={id}>
+              <article key={id}>
                 <img src={image} alt={title} className="hero-image" />
               </article>
             );
