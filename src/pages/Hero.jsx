@@ -45,10 +45,11 @@ const Hero = () => {
       </div>
       <div className="images-container">
         <div className="images-center">
+          <img src="../src/images/cheers1.jpg" alt="" />
           {heroImages.map((item) => {
             const { id, image, title, name } = item;
             return (
-              <article key={id}>
+              <article className={name} key={id}>
                 <img src={image} alt={title} className="hero-image" />
               </article>
             );
