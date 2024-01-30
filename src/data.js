@@ -181,25 +181,25 @@ export const deserts = [
 export const heroImages = [
   {
     id: 2,
-    image: "../src/images/cheers1.jpg",
+    image: "../src/assets/images/cheers1.jpg",
     title: "cheers",
     name: "single-image image-1",
   },
   {
     id: 3,
-    image: "../src/images/eating1.jpg",
+    image: "../src/assets/images/eating1.jpg",
     title: "food",
     name: "single-image image-2",
   },
   {
     id: 4,
-    image: "../src/images/tables1.jpg",
+    image: "../src/assets/images/tables1.jpg",
     title: "tables",
     name: "single-image image-3",
   },
   {
     id: 5,
-    image: "../src/images/foodPrep1.jpg",
+    image: "../src/assets/images/foodPrep1.jpg",
     title: "food prep",
     name: "single-image image-4",
   },

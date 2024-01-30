@@ -2,34 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { LuAmpersand } from "react-icons/lu";
 
-// import { heroImages } from "../data";
-
-const heroImages = [
-  {
-    id: 2,
-    image: "../src/images/cheers1.jpg",
-    title: "cheers",
-    name: "single-image image-1",
-  },
-  {
-    id: 3,
-    image: "../src/images/eating1.jpg",
-    title: "food",
-    name: "single-image image-2",
-  },
-  {
-    id: 4,
-    image: "../src/images/tables1.jpg",
-    title: "tables",
-    name: "single-image image-3",
-  },
-  {
-    id: 5,
-    image: "../src/images/foodPrep1.jpg",
-    title: "food prep",
-    name: "single-image image-4",
-  },
-];
+import { heroImages } from "../data";
 
 const Hero = () => {
   return (
@@ -45,15 +18,14 @@ const Hero = () => {
       </div>
       <div className="images-container">
         <div className="images-center">
-          <h1>Images Coming Soon</h1>
-          {/* {heroImages.map((item) => {
+          {heroImages.map((item) => {
             const { id, image, title, name } = item;
             return (
               <article className={name} key={id}>
                 <img src={image} alt={title} className="hero-image" />
               </article>
             );
-          })} */}
+          })}
         </div>
       </div>
       <div className="bar-container">
