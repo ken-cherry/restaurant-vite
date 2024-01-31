@@ -30,7 +30,44 @@ const Hero = () => {
         </div>
       </div>
       <div className="bar-container">
-        <div className="bar-center">bar</div>
+        <div className="bar-center">
+          <article>
+            <div className="card">
+              <div className="info">
+                <h2>Large Groups</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
+                  libero pariatur incidunt quasi.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div className="card">
+              <div className="info">
+                <h2>Large Groups</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
+                  libero pariatur incidunt quasi.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div className="card">
+              <div className="info">
+                <h2>Large Groups</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
+                  libero pariatur incidunt quasi.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </Wrapper>
   );
@@ -46,7 +83,8 @@ const Wrapper = styled.section`
     background-position: center;
     text-align: center;
   }
-  .hero-center {
+  .hero-center,
+  .bar-center {
     color: var(--slate-100);
     font-style: italic;
   }
@@ -81,10 +119,31 @@ const Wrapper = styled.section`
   }
   .bar-container {
     height: 100vh;
+    display: grid;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
   }
-
+  .bar-center {
+    height: 100vh;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    place-items: center;
+  }
+  .card {
+    display: grid;
+    border: 2px solid white;
+  }
+  .info {
+    display: grid;
+    place-items: center;
+  }
+  .info p {
+    text-align: center;
+    padding: 0 0.5rem;
+  }
   @media screen and (min-width: 768px) {
     .hero-icon {
       font-size: 6rem;
