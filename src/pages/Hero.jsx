@@ -30,16 +30,19 @@ const Hero = () => {
         </div>
       </div>
       <div className="bar-container">
-        <div className="bar-center">
+        {/* <div className="bar-center">
           <article>
             <div className="card">
               <div className="info">
-                <h2>Large Groups</h2>
+                <h2>Private Dining</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
                   incidunt dicta commodi odit? Nostrum, praesentium quisquam
                   libero pariatur incidunt quasi.
                 </p>
+              </div>
+              <div className="image">
+                <img src="../images/privateDinning.jpg" alt="" />
               </div>
             </div>
           </article>
@@ -53,21 +56,27 @@ const Hero = () => {
                   libero pariatur incidunt quasi.
                 </p>
               </div>
+              <div className="bar-image">
+                <img src="" alt="" />
+              </div>
             </div>
           </article>
           <article>
             <div className="card">
               <div className="info">
-                <h2>Large Groups</h2>
+                <h2>Special Events</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
                   incidunt dicta commodi odit? Nostrum, praesentium quisquam
                   libero pariatur incidunt quasi.
                 </p>
               </div>
+              <div className="image">
+                <img src="" alt="" />
+              </div>
             </div>
           </article>
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   );
@@ -144,6 +153,7 @@ const Wrapper = styled.section`
     text-align: center;
     padding: 0 0.5rem;
   }
+
   @media screen and (min-width: 768px) {
     .hero-icon {
       font-size: 6rem;
