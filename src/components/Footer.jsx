@@ -28,7 +28,9 @@ const Footer = () => {
 };
 
 const Wrapper = styled.section`
-  background: var(--slate-700);
+  /* background: var(--slate-700); */
+  background: var(--slate-200);
+
   .footer-center {
     text-transform: capitalize;
     width: var(--view-width);
@@ -37,6 +39,7 @@ const Wrapper = styled.section`
     flex-direction: column;
     color: var(--slate-100);
     text-align: center;
+    color: var(--slate-700);
   }
   .contact-info {
     display: flex;

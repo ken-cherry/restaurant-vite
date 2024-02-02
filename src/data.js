@@ -204,3 +204,24 @@ export const heroImages = [
     name: "single-image image-4",
   },
 ];
+
+export const barInfo = [
+  {
+    id: 1,
+    image: "./images/privateDining.jpg",
+    title: "Private Dining",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt dicta commodi odit? Nostrum, praesentium quisquam libero pariatur incidunt quasi.",
+  },
+  {
+    id: 2,
+    image: "./images/largeGroups.jpg",
+    title: "Large Groups",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt dicta commodi odit? Nostrum, praesentium quisquam libero pariatur incidunt quasi.",
+  },
+  {
+    id: 3,
+    image: "./images/specialEvents.jpg",
+    title: "Special Events",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt dicta commodi odit? Nostrum, praesentium quisquam libero pariatur incidunt quasi.",
+  },
+];

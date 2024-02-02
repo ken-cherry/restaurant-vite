@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { LuAmpersand } from "react-icons/lu";
 
-import { heroImages } from "../data";
+import { barInfo, heroImages } from "../data";
 //
 
 const Hero = () => {
@@ -30,59 +30,33 @@ const Hero = () => {
         </div>
       </div>
       <div className="bar-container">
-        {/* <div className="bar-center">
-          <article>
-            <div className="card">
-              <div className="info">
-                <h2>Private Dining</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
-                  libero pariatur incidunt quasi.
-                </p>
-              </div>
-              <div className="image">
-                <img src="../images/privateDinning.jpg" alt="" />
-              </div>
-            </div>
-          </article>
-          <article>
-            <div className="card">
-              <div className="info">
-                <h2>Large Groups</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
-                  libero pariatur incidunt quasi.
-                </p>
-              </div>
-              <div className="bar-image">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </article>
-          <article>
-            <div className="card">
-              <div className="info">
-                <h2>Special Events</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  incidunt dicta commodi odit? Nostrum, praesentium quisquam
-                  libero pariatur incidunt quasi.
-                </p>
-              </div>
-              <div className="image">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </article>
-        </div> */}
+        <div className="bar-center">
+          {barInfo.map((item) => {
+            const { id, image, title, text } = item;
+            return (
+              <article key={id}>
+                <div className="card">
+                  <div className="info">
+                    <h2>{title}</h2>
+                    <p>{text}</p>
+                  </div>
+                  <div className="bar-image-center">
+                    <img src={image} alt={title} className="bar-image" />
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
+  /* 
+  Hero Container 
+  */
   .hero-container {
     min-height: calc(100vh - 3rem);
     display: grid;
@@ -106,6 +80,9 @@ const Wrapper = styled.section`
     font-size: 2rem;
     transition: var(--transition);
   }
+  /* 
+  Images Container 
+  */
   .images-container {
     background: var(--slate-600);
     /* background: var(--slate-200); */
@@ -126,34 +103,6 @@ const Wrapper = styled.section`
     object-fit: cover;
     border-radius: var(--borderRadius);
   }
-  .bar-container {
-    height: 100vh;
-    display: grid;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-  }
-  .bar-center {
-    height: 100vh;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    place-items: center;
-  }
-  .card {
-    display: grid;
-    border: 2px solid white;
-  }
-  .info {
-    display: grid;
-    place-items: center;
-  }
-  .info p {
-    text-align: center;
-    padding: 0 0.5rem;
-  }
-
   @media screen and (min-width: 768px) {
     .hero-icon {
       font-size: 6rem;
@@ -194,6 +143,61 @@ const Wrapper = styled.section`
     }
     .image-4 {
       grid-area: d;
+    }
+  }
+  /* 
+  Bar Container 
+  */
+  .bar-container {
+    /* height: 100vh; */
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+  }
+  .bar-center {
+    /* height: 100vh; */
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    place-items: center;
+  }
+  .card {
+    width: 90vw;
+    max-width: 28rem;
+    display: grid;
+    border: 2px solid white;
+    border-radius: var(--borderRadius);
+    padding: 0.5rem 0;
+    background-color: var(--slate-700);
+  }
+  .info {
+    display: grid;
+    place-items: center;
+  }
+  .info p {
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  .bar-image-center {
+    margin: 1rem 0;
+    display: grid;
+    place-items: center;
+  }
+  .bar-image {
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+  }
+  @media screen and (min-width: 1450px) {
+    .bar-container {
+      height: 100vh;
+    }
+    .bar-center {
+      transition: var(--transition);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `;
