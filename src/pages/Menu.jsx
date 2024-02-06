@@ -28,6 +28,9 @@ const Wrapper = styled.section`
   .single-item h1 {
     font-style: italic;
   }
+  .single-item p {
+    font-size: 1rem;
+  }
   .menu-center {
     font-weight: 500;
     font-size: 1.25rem;
